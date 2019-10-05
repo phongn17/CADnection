@@ -214,6 +214,13 @@ int main(A3DInt32 iArgc, A3DUTF8Char** ppcArgv)
 	boost::split(exts, props["SupportedExtensions"], boost::is_any_of(", "), boost::token_compress_on);
 	for (vector<string>::iterator it = exts.begin(); it != exts.end(); ++it) {
 		size_t pos = it->find(':');
+		if (pos != std::string::npos) {
+			string ext = it->substr(0, pos);
+			string app = it->substr(pos + 1);
+			boost::algorithm::to_lower(ext);
+			supportedExts.push_back(ext);
+			extMappings.insert(std::make_pair(ext, app));
+		}
 	}
 
 	struct stat info;
