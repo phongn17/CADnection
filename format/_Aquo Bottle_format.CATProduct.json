@@ -1,0 +1,336 @@
+{
+   "docs": [
+         {
+           "Id":"2",
+           "Name":"Aquo Bottle",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/_Aquo Bottle.CATProduct",
+           "Thumbnail":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/_Aquo Bottle.CATProduct.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 1",
+           "PartNumber":"Aquo Bottle",
+           "Source":"Unknown",
+           "Parts": ["4","55","208","250"]},
+         {
+           "Id":"4",
+           "Name":"Water_Bottle_V1(Water_Bottle_V1)",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/Water_Bottle_V1.CATPart",
+           "Thumbnail":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/Water_Bottle_V1.CATPart.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 2",
+           "PartNumber":"Water_Bottle_V1",
+           "InstanceName":"Water_Bottle_V1",
+           "Revision":"1.1",
+           "Source":"made",
+           "DescriptionRef":"Aquo Eco friendly refillable bottle with optional filter",
+           "Supplier Instructions":"Deliver final assembly to Customer",
+           "PMI":[
+               {
+                 "Id":"23",
+                 "Name":"Text.1",
+                 "GeneratedName":"Markup 1",
+                 "PMIType":"Rich Text",
+                 "Text":"Notes: Dimensions and Tolerances per ASME y14.5- 1994 and ASME 614.41 – 2003
+                     Finish and Process codes in accordance with GAF14A
+
+                     Unless annotated otherwise Tolerances shall be as follows:
+                        1. A Non-biased surface profile tolerance band is +/- .020 mm shall be applied
+                        2. The default angular tolerance is +/- 0 Degrees 30 Minutes
+                        3. Chamfer angle tolerance =/- 3 Degrees
+
+                     Break sharp edges.
+
+                     Use best shop practices on surface finish areas.
+
+                     All non annotated surfaces are profile tolerance to .015 to datums A|B|C"},
+               {
+                 "Id":"28",
+                 "Name":"Datum.1",
+                 "GeneratedName":"Markup 2",
+                 "PMIType":"Datum",
+                 "ToleranceUnits":"Millimeters",
+                 "UpText":"A",
+                 "Target":false,
+                 "Diameter":false,
+                 "Individual":false},
+              {
+                 "Id":"81",
+                 "Name":"Datum.3",
+                 "GeneratedName":"Markup 3",
+                 "PMIType":"Datum",
+                 "ToleranceUnits":"Millimeters",
+                 "UpText":"C",
+                 "Target":false,
+                 "Diameter":false,
+                 "Individual":false},
+               {
+                 "Id":"89",
+                 "Name":"Geometrical Tolerance.1",
+                 "GeneratedName":"Markup 4",
+                 "ToleranceUnits":"Millimeters",
+                 "Type":"GD&T"},
+              {
+                 "Id":"116",
+                 "Name":"Datum.4",
+                 "GeneratedName":"Markup 5",
+                 "PMIType":"Datum",
+                 "ToleranceUnits":"Millimeters",
+                 "UpText":"D",
+                 "Target":false,
+                 "Diameter":false,
+                 "Individual":false},
+               {
+                 "Id":"124",
+                 "Name":"Geometrical Tolerance.2",
+                 "GeneratedName":"Markup 6",
+                 "ToleranceUnits":"Millimeters",
+                 "PMIType":"GD&T"},
+              {
+                 "Id":"129",
+                 "Name":"Datum.5",
+                 "GeneratedName":"Markup 7",
+                 "PMIType":"Datum",
+                 "ToleranceUnits":"Millimeters",
+                 "UpText":"E",
+                 "Target":false,
+                 "Diameter":false,
+                 "Individual":false},
+               {
+                 "Id":"149",
+                 "Name":"Geometrical Tolerance.3",
+                 "GeneratedName":"Markup 8",
+                 "ToleranceUnits":"Millimeters",
+                 "PMIType":"GD&T"},
+               {
+                 "Id":"155",
+                 "Name":"Geometrical Tolerance.4",
+                 "GeneratedName":"Markup 9",
+                 "ToleranceUnits":"Millimeters",
+                 "Type":"GD&T"},
+               {
+                 "Id":"162",
+                 "Name":"Geometrical Tolerance.5",
+                 "GeneratedName":"Markup 10",
+                 "ToleranceUnits":"Millimeters",
+                 "PMIType":"GD&T"},
+               {
+                 "Id":"167",
+                 "Name":"Geometrical Tolerance.6",
+                 "GeneratedName":"Markup 11",
+                 "ToleranceUnits":"Millimeters",
+                 "PMIType":"GD&T"},
+               {
+                 "Id":"172",
+                 "Name":"Geometrical Tolerance.7",
+                 "GeneratedName":"Markup 12",
+                 "ToleranceUnits":"Millimeters",
+                 "PMIType":"GD&T"},
+               {
+                 "Id":"182",
+                 "Name":"Roughness.1",
+                 "GeneratedName":"Markup 13",
+                 "PMIType":"Roughness",
+                 "Mode":"No Specified Lay",
+                 "Type":"Basic",
+                 "ContactArea":"Surface Texture"},
+               {
+                 "Id":"187",
+                 "Name":"Roughness.2",
+                 "GeneratedName":"Markup 14",
+                 "PMIType":"Roughness",
+                 "Mode":"No Specified Lay",
+                 "Type":"Basic",
+                 "ContactArea":"Surface Texture"},
+               {
+                 "Id":"192",
+                 "Name":"Roughness.3",
+                 "GeneratedName":"Markup 15",
+                 "PMIType":"Roughness",
+                 "Mode":"No Specified Lay",
+                 "Type":"Basic",
+                 "ContactArea":"Surface Texture"},
+              {
+                 "Id":"197",
+                 "Name":"Datum.6",
+                 "GeneratedName":"Markup 16",
+                 "PMIType":"Datum",
+                 "ToleranceUnits":"Millimeters",
+                 "UpText":"F",
+                 "Target":false,
+                 "Diameter":false,
+                 "Individual":false},
+              {
+                 "Id":"229",
+                 "Name":"Datum.7",
+                 "GeneratedName":"Markup 17",
+                 "PMIType":"Datum",
+                 "ToleranceUnits":"Millimeters",
+                 "UpText":"G",
+                 "Target":false,
+                 "Diameter":false,
+                 "Individual":false},
+               {
+                 "Id":"172",
+                 "Name":"Geometrical Tolerance.8",
+                 "ToleranceUnits":"Millimeters",
+                 "PMIType":"GD&T"},
+              {
+                 "Id":"52",
+                 "Name":"Dimension.1",
+                 "PMIType":"Dimension",
+                 "DimensionType":"Diameter Cylinder",
+                 "ToleranceUnits":"Millimeters",
+                 "Value":60.960000,
+                 "ToleranceAccuracy":0.010000},
+              {
+                 "Id":"110",
+                 "Name":"Dimension.3",
+                 "PMIType":"Dimension",
+                 "DimensionType":"Distance",
+                 "ToleranceUnits":"Millimeters",
+                 "Value":247.650000,
+                 "ToleranceAccuracy":0.010000},
+              {
+                 "Id":"223",
+                 "Name":"Dimension.5",
+                 "PMIType":"Dimension",
+                 "DimensionType":"Distance",
+                 "ToleranceUnits":"Millimeters",
+                 "Value":31.750000,
+                 "ToleranceAccuracy":0.010000},
+              {
+                 "Id":"73",
+                 "Name":"Datum.2",
+                 "PMIType":"Datum",
+                 "ToleranceUnits":"Millimeters",
+                 "UpText":"B",
+                 "Target":false,
+                 "Diameter":false,
+                 "Individual":false}],
+            "MechanicalTool.1":
+            {
+               "Id":"3",
+               "Name":"MechanicalTool.1",
+               "BodyID":"MechanicalTool.1"}},
+        {
+           "Id":"55",
+           "Name":"Filter(Filter.1)",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/Filter.CATPart",
+           "Thumbnail":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/Filter.CATPart.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 3",
+           "PartNumber":"Filter.1",
+           "InstanceName":"Filter.1",
+           "Source":"Unknown",
+           "MechanicalTool.1":
+            {
+               "Id":"3",
+               "Name":"MechanicalTool.1",
+               "BodyID":"MechanicalTool.1"},
+           "Coal":
+            {
+               "Id":"797",
+               "Name":"Coal",
+               "BodyID":"MechanicalTool.2"}},
+        {
+           "Id":"208",
+           "Name":"Water_Bottle_Lid_Assy(Water_Bottle_Lid_Assy.1)",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/Water_Bottle_Lid_Assy.CATProduct",
+           "Thumbnail":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/Water_Bottle_Lid_Assy.CATProduct.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 4",
+           "PartNumber":"Water_Bottle_Lid_Assy",
+           "InstanceName":"Water_Bottle_Lid_Assy.1",
+           "Source":"Unknown",
+            "Parts":["210","216","220","223"]},
+        {
+           "Id":"250",
+           "Name":"Ring(Ring.1)",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/Ring.CATPart",
+           "Thumbnail":"C:/Dev/lucidworks/data/techsoft/catiaV5/CV5_Aquo_Bottle/Ring.CATPart.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 9",
+           "PartNumber":"Ring",
+           "InstanceName":"Ring.1",
+           "Source":"Unknown",
+            "MechanicalTool.1":
+            {
+               "Id":"3",
+               "Name":"MechanicalTool.1",
+               "BodyID":"MechanicalTool.1"}
+         },
+        {
+           "Id":"210",
+           "Name":"Ring(Ring.1)",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/Code/CADnection/data/techsoft/catiaV5/CV5_Aquo_Bottle/Lid.CATPart",
+           "Thumbnail":"C:/Dev/lucidworks/Code/CADnection/data/techsoft/catiaV5/CV5_Aquo_Bottle/Lid.CATPart.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 5",
+           "PartNumber":"Lid",
+           "InstanceName":"Lid.1",
+           "Source":"Unknown",
+            "MechanicalTool.1":
+            {
+               "Id":"3",
+               "Name":"MechanicalTool.1",
+               "GeneratedName":"Solid 4",
+               "BodyID":"MechanicalTool.1"}
+         },
+        {
+           "Id":"216",
+           "Name":"Bullet_Lid_Cap(Bullet_Lid_Cap.1)",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/Code/CADnection/data/techsoft/catiaV5/CV5_Aquo_Bottle/Bullet_Lid_Cap.CATPart",
+           "Thumbnail":"C:/Dev/lucidworks/Code/CADnection/data/techsoft/catiaV5/CV5_Aquo_Bottle/Bullet_Lid_Cap.CATPart.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 6",
+           "PartNumber":"Bullet_Lid_Cap",
+           "InstanceName":"Bullet_Lid_Cap.1",
+           "Source":"Unknown",
+            "MechanicalTool.1":
+            {
+               "Id":"3",
+               "Name":"MechanicalTool.1",
+               "GeneratedName":"Solid 5",
+               "BodyID":"MechanicalTool.1"}
+         },
+        {
+           "Id":"220",
+           "Name":"Water_Bottle_Nozzle(Water_Bottle_Nozzle.1)",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/Code/CADnection/data/techsoft/catiaV5/CV5_Aquo_Bottle/Water_Bottle_Nozzle.CATPart",
+           "Thumbnail":"C:/Dev/lucidworks/Code/CADnection/data/techsoft/catiaV5/CV5_Aquo_Bottle/Water_Bottle_Nozzle.CATPart.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 7",
+           "PartNumber":"Water_Bottle_Nozzle",
+           "InstanceName":"Water_Bottle_Nozzle.1",
+           "Source":"Unknown",
+            "PartBody":
+            {
+               "Id":"226",
+               "Name":"PartBody",
+               "GeneratedName":"Solid 6",
+               "BodyID":"MechanicalTool.2"}
+         },
+        {
+           "Id":"223",
+           "Name":"Water_Bottle_Rod(Water_Bottle_Rod.1)",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/Code/CADnection/data/techsoft/catiaV5/CV5_Aquo_Bottle/Water_Bottle_Rod.CATPart",
+           "Thumbnail":"C:/Dev/lucidworks/Code/CADnection/data/techsoft/catiaV5/CV5_Aquo_Bottle/Water_Bottle_Rod.CATPart.png",
+           "FileFormat":"CATIA V5",
+           "GeneratedName":"Product 8",
+           "PartNumber":"Water_Bottle_Rod",
+           "InstanceName":"Water_Bottle_Rod.1",
+           "Source":"Unknown",
+            "MechanicalTool.1":
+            {
+               "Id":"3",
+               "Name":"MechanicalTool.1",
+               "BodyID":"MechanicalTool.1"}}]
+}

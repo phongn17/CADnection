@@ -1,0 +1,77 @@
+<attributes>
+	<ATTRIBUTE key="ItemNumber" attribute_value="H7894561">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier D" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefD02" />
+		<NEW_ATTRIB name="Price" value="10.20" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="C4874562">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier G" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefG01" />
+		<NEW_ATTRIB name="Price" value="5.90" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="H1212556">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier A" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefA02" />
+		<NEW_ATTRIB name="Price" value="7.80" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="P4523698">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier F" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefF02" />
+		<NEW_ATTRIB name="Price" value="6.30" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="B4524789">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier D" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefD01" />
+		<NEW_ATTRIB name="Price" value="4.00" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="B4523687">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier C" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefC01" />
+		<NEW_ATTRIB name="Price" value="6.10" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="A4123589">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier A" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefA01" />
+		<NEW_ATTRIB name="Price" value="10.50" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="P1256398">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier E" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefE02" />
+		<NEW_ATTRIB name="Price" value="9.30" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="C4125364">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier F" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefF01" />
+		<NEW_ATTRIB name="Price" value="4.00" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="B2365891">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier B" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefB01" />
+		<NEW_ATTRIB name="Price" value="2.05" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="H5569123">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier C" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefC02" />
+		<NEW_ATTRIB name="Price" value="5.50" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="H4114567">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier B" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefB02" />
+		<NEW_ATTRIB name="Price" value="5.90" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="S2234587">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier G" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefG02" />
+		<NEW_ATTRIB name="Price" value="9.30" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="S2234796">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier A" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefA03" />
+		<NEW_ATTRIB name="Price" value="1.10" />
+	</ATTRIBUTE>
+	<ATTRIBUTE key="ItemNumber" attribute_value="C1145783">
+		<NEW_ATTRIB name="SUPPLIER" value="Supplier E" />
+		<NEW_ATTRIB name="SUPPLIER_REFERENCE" value="RefE01" />
+		<NEW_ATTRIB name="Price" value="0.50" />
+	</ATTRIBUTE>
+</attributes>

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CADnection.Processor", "CADnection.Processor\CADnection.Processor.vcxproj", "{1327BA6B-3E03-462A-848F-65F1ABA3E459}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{017EB321-7852-4774-BD4F-1685316A18DF}"
+	ProjectSection(SolutionItems) = preProject
+		common.hpp = common.hpp
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1327BA6B-3E03-462A-848F-65F1ABA3E459}.Debug|x64.ActiveCfg = Debug|x64
+		{1327BA6B-3E03-462A-848F-65F1ABA3E459}.Debug|x64.Build.0 = Debug|x64
+		{1327BA6B-3E03-462A-848F-65F1ABA3E459}.Debug|x86.ActiveCfg = Debug|Win32
+		{1327BA6B-3E03-462A-848F-65F1ABA3E459}.Debug|x86.Build.0 = Debug|Win32
+		{1327BA6B-3E03-462A-848F-65F1ABA3E459}.Release|x64.ActiveCfg = Release|x64
+		{1327BA6B-3E03-462A-848F-65F1ABA3E459}.Release|x64.Build.0 = Release|x64
+		{1327BA6B-3E03-462A-848F-65F1ABA3E459}.Release|x86.ActiveCfg = Release|Win32
+		{1327BA6B-3E03-462A-848F-65F1ABA3E459}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5DFA0C9-B22F-422C-94A5-C577C60F3151}
+	EndGlobalSection
+EndGlobal

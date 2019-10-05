@@ -1,0 +1,96 @@
+- Physical properties
+- Files path
+    - Filepaths
+    - AssemblyFilePaths
+    - MissingFilePaths
+- Global Data
+    - Colors
+    - GraphStyleData(s)
+    - GraphLinePatternData(s)
+    - GraphTextureApplicationData(s) or GraphMaterial - RootBaseData & GraphMaterialData
+    - GraphPicture(s) - RootBaseData & GraphPictureData
+    - Graph<Filling Pattern Name>PatternData
+    - MiscAttributeUnit
+        - MiscAttributeBasicUnit(s)
+    - FontData
+- Model File Data (m_bUnitFromCAD, m_dUnit: actual unit)
+    is the root PRC entity, represented by A3DAsmModelFile. There is only one model file per assembly tree. 
+    The model file structure contains references to the product occurrences as well as global information such as the unit scale and the modelling system used 
+    to create the file
+    - RootBaseData
+    - AsmProductOccurenceData(n) (Product Occurences: m_uiPOccurrencesSize product occurrences) is meant to encapsulate a single part, an assembly of parts, or both.
+        is a logical group of geometric information. These nodes are the building blocks of the PRC assembly tree and represent the root data structure for 
+        an assembly and all the information contained within. A product occurrence node may contain many child product occurrences, entity references, annotations, filters, 
+        and other entities, or it could represent just a single part. It can also be used to instance other geometry by referencing other product occurrences
+        - RootBaseData
+            contains fields such as attributes, entity name, and ID. 
+        | RootBaseWithGraphicsData (GraphicsData)
+            encapsulates information that affects the appearance of the entity, such as color, line pattern, and display style.
+        - MiscTransformation
+            - Misc<Transformation Name>TransformationData | MiscGeneralTransformationData
+        - Layers
+            An entity can only be linked to one layer.
+            - Layer
+        - Prototype
+            model creators will have a need to instance the same geometric data multiple times in the model file. Most file formats will define this data once 
+            and instance it wherever it is needed. It is a pointer to another product occurrence which contains geometry meant to be instanced in multiple places.
+            If you find a product occurrence with neither children nor a part definition, the node likely has a reference to a prototype.
+            - AsmProductOccurenceData(n)
+        - ExternalData (Externals)
+          An external is a subassembly tree that has been created in a different CAD system than its parent file. Externals are represented by a product 
+          occurrence node. The concept is similar to a prototype, and thus they should be parsed the same way. The one important difference between the two 
+          is an external's geometry and attributes cannot be modified due to limitations between their disparate authoring systems.
+        - AsmProductOccurenceData(n)
+        - MiscEntityReferenceData(n)
+        - MkpAnnotationSetData | MkpAnnotationReferenceData | MkpAnnotationItemData (n) (PMI)
+        - GraphSceneDisplayParametersData(n) (Display parameters)
+        - MkpViewData(n)
+        - AsmPartDefinitionData
+            contain metadata about the geometry such as as annotations, views, the bounding box, as well as a reference to the part's geometric representation.
+            Product occurrences are the only type of node that may contain a part definition. A product occurrence may only contain a single part definition.
+            - RootBaseData or RootBaseWithGraphicsData (GraphicsData)
+            - BoundingBoxData
+            - MkpAnnotationSetData | MkpAnnotationReferenceData | MkpAnnotationItemData (n) (PMI)
+            - MkpViewData(n)
+                - RootBaseData or RootBaseWithGraphicsData (GraphicsData)
+                - SurfPlaneData
+                - GraphSceneDisplayParametersData
+                - DisplayFilters
+                    - AsmFilterData(n)
+                - LinkedItems
+                    - MiscMarkupLinkedItemData(n)
+                        - RootBaseData or RootBaseWithGraphicsData (GraphicsData)
+            - traverse RepItem: RiSetData | RiPlaneData | RiPointSetData | RiCurveData | RiBrepModelData | RiPolyBrepModelData (n)
+                - RootBaseData or RootBaseWithGraphicsData (GraphicsData)
+                - RiRepresentationItem(n)
+                    encapsulate information about how to draw the geometry. This includes the model transform, tessellation data, and B-rep information, if available. 
+                    Particularly complex parts in the model may consist of multiple representation items
+                - MiscMaterialPropertiesData
+            | RiDirectionData (n)
+                - RootBaseData or RootBaseWithGraphicsData (GraphicsData)
+                - RiRepresentationItem(n)
+                    encapsulate information about how to draw the geometry. This includes the model transform, tessellation data, and B-rep information, if available. 
+                    Particularly complex parts in the model may consist of multiple representation items
+            | RiCoordinateSystemData (n)
+                - RootBaseData or RootBaseWithGraphicsData (GraphicsData)
+            - DrawingModeldata(n)
+                - DrawingSheetdata(n)
+                    - DrawingViewData(n)
+                        - DrawingBlockData(n)
+                            - MkpMarkupData(n)
+                                - RootBaseData or RootBaseWithGraphicsData (GraphicsData)
+        - AsmFilterData
+          Filters allow you to show or hide a set of geometry. The purpose is to bring attention to particular components, usually in order to simplify the model or 
+          express an idea.
+        - FRMFeatureTree(n)
+        - MaterialAndVisualisationSetup(n)
+        - Export Specific information per CAD format based on modeller type - AsmProductOccurrenceDataUg (ModellerUnigraphics)
+            - RefSets
+                - RefSet(n)
+                    - Child(n)
+                - RefSet(n)
+                    - Solid(n)
+        - MiscMaterialPropertiesData
+
+
+- Removed TopoBrepDataData, RiRepresentationItemData

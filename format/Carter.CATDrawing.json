@@ -1,0 +1,52 @@
+{
+   "docs": [
+        {
+           "Id":"1FAD14E2-CA32-4771-A37F-E525E5217A42",
+           "Name":"Product 1",
+           "Type":"Product Occurrence",
+           "FileName":"C:/Dev/lucidworks/data/techsoft/drawing/Carter.CATDrawing",
+           "Thumbnail":"C:/Dev/lucidworks/data/techsoft/drawing/Carter.CATDrawing.png",
+           "FileFormat":"CATIA V5",
+           "Drawing Sheets": [
+            {
+               "Id":"C4203553-E78F-4F97-BDDD-00E73533A0BA",
+               "Name":"Sheet 1",
+               "Type":"Drawing Sheet",
+               "Drawing Views": [
+               {
+                  "Id":"52",
+                  "Name":"View 1",
+                  "Type":"Drawing View"},
+               {
+                  "Id":"81",
+                  "Name":"View 2",
+                  "Type":"Drawing View"},
+               {
+                  "Id":"681",
+                  "Name":"View 3",
+                  "Type":"Drawing View"},
+               {
+                  "Id":"2216",
+                  "Name":"View 4",
+                  "Type":"Drawing View"},
+               {
+                  "Id":"4856",
+                  "Name":"View 5",
+                  "Type":"Drawing View"},
+               {
+                  "Id":"8253",
+                  "Name":"View 6",
+                  "Type":"Drawing View"},
+               {
+                  "Id":"14174",
+                  "Name":"View 7",
+                  "Type":"Drawing View"},
+               {
+                  "Id":"15592",
+                  "Name":"View 8",
+                  "Type":"Drawing View"},
+               {
+                  "Id":"16724",
+                  "Name":"View 9",
+                  "Type":"Drawing View"}]}]
+}
