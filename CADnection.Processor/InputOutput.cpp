@@ -1,4 +1,5 @@
 #include "InputOutput.h"
+#include <boost/algorithm/string.hpp>
 
 #pragma warning(disable : 4267)			// warning occurs in cenv.hpp
 #include <nowide/cenv.hpp>
@@ -58,4 +59,19 @@ void InputOutput::SetGeneratedDataFolder(const char* generatedDataFolder) {
 
 void InputOutput::SetJsonFolder(const char* jsonFolder) {
 	this->m_jsonFolder = jsonFolder;
+}
+
+void InputOutput::GenerateExtensionInfo(vector<string>& exts)
+{
+	for (vector<string>::iterator it = exts.begin(); it != exts.end(); ++it) {
+		size_t pos = it->find(':');
+		if (pos != std::string::npos) {
+			string ext = it->substr(0, pos);
+			string app = it->substr(pos + 1);
+			boost::algorithm::to_lower(ext);
+			m_supportedExts.push_back(ext);
+			m_extMappings.insert(std::make_pair(ext, app));
+		}
+	}
+
 }

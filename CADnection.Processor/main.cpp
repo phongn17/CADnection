@@ -100,6 +100,12 @@ A3DStatus GenerateFiles(A3DSDKHOOPSExchangeLoader& sHoopsExchangeLoader, const M
 			if (!boost::filesystem::exists(acPNGFileName)) {
 				(*jsonData)["docs"][0]["FileName"] = filename.c_str();
 				(*jsonData)["docs"][0]["FileExtension"] = ext.substr(1).c_str();
+				boost::algorithm::to_lower(ext);
+				map<string, string> extMappings = thumbnailConverter->GetExtMappings();
+				map<string, string>::iterator it = extMappings.find(ext);
+				if (it != extMappings.end()) {
+					(*jsonData)["docs"][0]["Application"] = it->second;
+				}
 				bool ret = true;
 				if (thumbnailConverter->IsGenerateThumbnail()) {
 					ret = thumbnailConverter->Execute(filename.c_str(), acPNGFileName, acSCFileName);
@@ -142,12 +148,13 @@ A3DStatus GenerateFiles(A3DSDKHOOPSExchangeLoader& sHoopsExchangeLoader, const M
 	return A3D_SUCCESS;
 }
 
-void ProcessFolder(const char* folder, vector<string>& supportedExts, A3DSDKHOOPSExchangeLoader& sHoopsExchangeLoader, bool isGenerateXml, ThumbnailConverter* thumbnailConverter) {
+void ProcessFolder(const char* folder, A3DSDKHOOPSExchangeLoader& sHoopsExchangeLoader, bool isGenerateXml, ThumbnailConverter* thumbnailConverter) {
 	std::vector<wstring> folders;
 	std::locale loc;
 	try {
 		assert(is_directory(folder));
 		A3DStatus ret;
+		vector<string>& supportedExts = thumbnailConverter->GetSupportedExts();
 		for (directory_entry& x : directory_iterator(folder)) {
 			wstring path = x.path().generic_wstring();
 			if (is_regular_file(path)) {
@@ -168,7 +175,7 @@ void ProcessFolder(const char* folder, vector<string>& supportedExts, A3DSDKHOOP
 		}
 		if (!folders.empty()) {
 			for (std::vector<wstring>::iterator it = folders.begin(); it != folders.end(); ++it) {
-				ProcessFolder(narrow(*it).c_str(), supportedExts, sHoopsExchangeLoader, isGenerateXml, thumbnailConverter);
+				ProcessFolder(narrow(*it).c_str(), sHoopsExchangeLoader, isGenerateXml, thumbnailConverter);
 			}
 			folders.clear();
 		}
@@ -209,19 +216,7 @@ int main(A3DInt32 iArgc, A3DUTF8Char** ppcArgv)
 	std::string generatedDataFolder = props["GeneratedDataFolder"];
 	std::string jsonFolder = props["JsonFolder"];
 	vector<string> exts;
-	vector<string> supportedExts;
-	map<string, string> extMappings;
-	boost::split(exts, props["SupportedExtensions"], boost::is_any_of(", "), boost::token_compress_on);
-	for (vector<string>::iterator it = exts.begin(); it != exts.end(); ++it) {
-		size_t pos = it->find(':');
-		if (pos != std::string::npos) {
-			string ext = it->substr(0, pos);
-			string app = it->substr(pos + 1);
-			boost::algorithm::to_lower(ext);
-			supportedExts.push_back(ext);
-			extMappings.insert(std::make_pair(ext, app));
-		}
-	}
+	boost::split(exts, props["SupportedExtensions"], boost::is_any_of(","), boost::token_compress_on);
 
 	struct stat info;
 	if (stat(source.c_str(), &info) != 0) {
@@ -259,8 +254,9 @@ int main(A3DInt32 iArgc, A3DUTF8Char** ppcArgv)
 	thumbnailConverter.SetSCPrefix(scPrefix.c_str());
 	thumbnailConverter.SetGeneratedDataFolder(generatedDataFolder.c_str());
 	thumbnailConverter.SetJsonFolder(jsonFolder.c_str());
+	thumbnailConverter.GenerateExtensionInfo(exts);
 
-	ProcessFolder(source.c_str(), supportedExts, sHoopsExchangeLoader, isGenerateXml, &thumbnailConverter);
+	ProcessFolder(source.c_str(), sHoopsExchangeLoader, isGenerateXml, &thumbnailConverter);
 
 	return A3D_SUCCESS;
 }

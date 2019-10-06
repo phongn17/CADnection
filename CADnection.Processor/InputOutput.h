@@ -2,6 +2,8 @@
 #define __INPUT_OUTPUT_H__
 
 #include <string>
+#include <vector>
+#include <map>
 using namespace std;
 
 class InputOutput {
@@ -18,6 +20,8 @@ private:
 	string m_scPrefix;
 	string m_generatedDataFolder;
 	string m_jsonFolder;
+	vector<string> m_supportedExts;
+	map<string, string> m_extMappings;
 
 public:
 	const char* GetInput() const { return m_input.c_str(); }
@@ -56,6 +60,12 @@ public:
 
 	const char* GetJsonFolder() const { return m_jsonFolder.c_str(); }
 	void SetJsonFolder(const char* jsonFolder);
+
+	vector<string>& GetSupportedExts() { return m_supportedExts; }
+	
+	map<string, string>& GetExtMappings() { return m_extMappings; }
+
+	void GenerateExtensionInfo(vector<string>& exts);
 };
 
 #endif // !__INPUT_OUTPUT_H__

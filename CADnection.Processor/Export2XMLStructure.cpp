@@ -11,6 +11,7 @@
 
 #include <A3DSDKIncludes.h>
 #include "Export2XML.h"
+#include <boost/algorithm/string.hpp>
 
 //######################################################################################################################
 int traverseMaterialProperties(const A3DEntity* pEntity, TiXmlElement* xmlfather, json* jsonData, int index)
@@ -401,6 +402,12 @@ A3DInt32 productOccurrenceGetFilePathNames(const A3DAsmProductOccurrence* pOccur
 				std::string ext = boost::filesystem::extension(filename);
 				boost::algorithm::replace_last(filename, ext, "");
 				(*jsonData)["docs"][index]["FileExtension"] = ext.substr(1).c_str();
+				boost::algorithm::to_lower(ext);
+				map<string, string> extMappings = thumbnailConverter->GetExtMappings();
+				map<string, string>::iterator it = extMappings.find(ext);
+				if (it != extMappings.end()) {
+					(*jsonData)["docs"][index]["Application"] = it->second;
+				}
 				std::string id = (*jsonData)["docs"][index]["Id"].get<std::string>();
 				if (id.length() > 0) {
 					const char* generatedDataFolder = thumbnailConverter->GetGeneratedDataFolder();
