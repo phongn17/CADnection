@@ -1,7 +1,7 @@
 #include "ThumbnailConverter.h"
 #pragma warning(disable : 4267)			// warning occurs in cenv.hpp
-#include <nowide/cenv.hpp>
-using namespace nowide;
+// #include <nowide/cenv.hpp>
+// using namespace nowide;
 
 #ifdef _MSC_VER
 #pragma warning(disable: 4996) // _CRT_SECURE_NO_WARNINGS equivalent
@@ -52,24 +52,24 @@ bool ThumbnailConverter::Execute(const char* source, const char* dest, const cha
 	// system call
 	int ret = system(command);
 	if (ret == 0) {
-		const char* bucketName = GetS3Bucket();
-		const char* s3Folder = GetS3Folder();
+		// const char* bucketName = GetS3Bucket();
+		// const char* s3Folder = GetS3Folder();
 		//Aws::SDKOptions options;
 		//Aws::InitAPI(options);
-		{
-			S3Storage s3;
+		// {
+			//S3Storage s3;
 			//if (s3.CreateBucketIfAny(bucketName)) {
-				memset((void*)s3Object, 0, _MAX_PATH);
-				string key = output;
-				std::replace(key.begin(), key.end(), '/', '.');
-				sprintf(s3Object, "%s/%s", s3Folder, key.c_str());
-				//if (s3.PutObject(bucketName, s3Object, output)) {
-				//	ret = -1;
-				//}
-				memset((void*)s3Object, 0, _MAX_PATH);
-				key = sc;
-				std::replace(key.begin(), key.end(), '/', '.');
-				sprintf(s3Object, "%s/%s", s3Folder, key.c_str());
+				// memset((void*)s3Object, 0, _MAX_PATH);
+				// string key = output;
+				// std::replace(key.begin(), key.end(), '/', '.');
+				// sprintf(s3Object, "%s/%s", s3Folder, key.c_str());
+				// //if (s3.PutObject(bucketName, s3Object, output)) {
+				// //	ret = -1;
+				// //}
+				// memset((void*)s3Object, 0, _MAX_PATH);
+				// key = sc;
+				// std::replace(key.begin(), key.end(), '/', '.');
+				// sprintf(s3Object, "%s/%s", s3Folder, key.c_str());
 				//if (s3.PutObject(bucketName, s3Object, sc)) {
 				//	ret = -1;
 				//}
@@ -78,7 +78,7 @@ bool ThumbnailConverter::Execute(const char* source, const char* dest, const cha
 			//	cout << "Can't create/access to the s3 bucket named " << GetS3Bucket() << endl;
 			//	ret = -1;
 			//}
-		}
+		// }
 		//Aws::ShutdownAPI(options);
 	}
 
